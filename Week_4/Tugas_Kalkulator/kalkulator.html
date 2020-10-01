@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Kalkulator</title>
+    
+    <style type = "text/css">
+        .tombol{
+         background-color : pink;
+        }
+        .tabel{
+         background-color : red;
+         margin : 10 px;
+         padding : 10 px;
+        }
+		body {
+		 margin-right : 0 px;
+		 background-attachment : fixed;
+		 background-color : yellow;
+		}
+    </style>
+
+    <script src = "operator.js"></script>
+</head>
+<body>
+    <form name = "calculator">
+		<h1>Kalkulator Tidak Sempurna :(</h1>
+        <table style = "background-color : red" class = "tabel">
+            <caption>Kalkulator Sederhana</caption>
+                <tr>
+                    <td>Angka 1</td><td>:</td><td><input type = "number" name="a"></td>
+                </tr>
+
+                <tr>
+                    <td>Angka 2</td><td>:</td><td><input type="number" name="b"></td>
+                </tr>
+                <tr>
+                    <td colspan = "10" align = "right">
+                        <input class = "tombol" type = "button" onclick = "tambah()" value = "  +  ">
+                        <input class = "tombol" type = "button" onclick = "kurang()" value = "  -  ">
+                        <input class = "tombol" type = "button" onclick = "kali()" value = "  X  ">
+                        <input class = "tombol" type = "button" onclick = "bagi()" value = "  :  ">
+                    </td>
+					 <tr>
+                    <td>Hasil</td><td>:</td><td><input type="number" name="total"></td>
+                </tr>
+                </tr>  
+        </table>
+    </form>
+</body>
+</html>
